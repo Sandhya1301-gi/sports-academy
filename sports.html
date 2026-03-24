@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Sports Academy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d1b2a;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b') no-repeat center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .programs{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1 1 30%;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .small-img{
+          width:100%;
+          height:200px;
+          object-fit:cover;
+          margin:auto;
+          display:block;
+         }
+       
+    /*Form*/
+form{
+background:white;
+max-width:400px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+form input,form select{
+width:100%;
+padding:10px;
+margin: 10px 0;
+}
+form button{
+width:100%;
+padding:10px;
+background:orange;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+form button:hover{
+background:darkorange;
+}
+
+        footer {
+            background: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        @media(max-width: 768px) {
+            nav {
+                float: none;
+                text-align: center;
+            }
+
+            .logo {
+                float: none;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .programs{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/857/857455.png" alt="Logo">
+            <h2>Elite Sports Academy</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <h1>Train Hard. Play Smart. Achieve Greatness.</h1>
+</div>
+
+<section id="about" class="container">
+    <h2>About Us</h2>
+    <p>
+        Elite Sports Academy is dedicated to developing athletes through professional coaching,
+        world-class facilities, and a passion for excellence. We offer training in multiple sports
+        for all age groups.Whether you are a beginner exploring your interests or an aspiring professional aiming for excellence,our academy provides the right training and guidance to help you achieve your goals and grow both on and off the field.
+    </p>
+</section>
+
+<section class="section"id="programs">
+<h2>Our Programs</h2>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6" class="small-img">
+<h3>Football Training</h3>
+<p>Professional coaching for all age groups.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" class="small-img">
+<h3>Basketball Training</h3>
+<p>Improve your dribbling and shooting skills.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>Email: info@elitesportsacademy.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: Chennai, India</p>
+</section>
+<!--Registration Form-->
+<section class="section" id="register">
+<h2>Online Registration</h2>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone Number" required>
+
+<select required>
+<option value="">Select Sport</option>
+<option>Football</option>
+<option>Basketball</option>
+</select>
+
+<button type="submit">Register Now</button>
+</form>
+</section>
+
+<footer>
+    <p>© 2026 Elite Sports Academy | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
